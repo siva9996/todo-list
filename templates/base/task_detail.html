@@ -1,0 +1,11 @@
+{%  extends 'base/main.html' %}
+{% block content %}
+
+
+<h2>task : {{object.title}}</h2>
+<h4>User : {{object.user}}</h4>
+<h4>Description : {{object.description}}</h4>
+<h4>Complete : {{object.complete}}</h4>
+<h4>Create : {{object.created|timesince}}</h4>
+
+{% endblock %}
